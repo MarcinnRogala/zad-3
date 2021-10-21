@@ -322,3 +322,14 @@ footer {
   width: 260px;
   height: 80px;
 }
+.menu__button button:hover {
+  background-color: #a29bfe;
+  color: #333;
+  transition: 1s;
+  width: 240px;
+  height: 70px;
+}
+.btn:checked {
+  width: 16px;
+  transition: 5s;
+}
