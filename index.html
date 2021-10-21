@@ -9,16 +9,16 @@
     <title>Zadanie3</title>
   </head>
   <body>
-    <header>
-      <div class="hero">
+    <header class="header">
+      <div class="header__hero">
         <span><h1>Contact Us</h1></span>
       </div>
-      <div class="hero__content">
+      <div class="header__content">
         <span>Any question or remarks? Just write us a message!</span>
       </div>
     </header>
     <main>
-      <footer>
+      <footer class="footer">
         <div class="footer__info--hero">
           <span><strong>Contact Information</strong></span>
         </div>
@@ -105,19 +105,30 @@
             />
           </div>
         </div>
+        <div class="menu"></div>
         <div class="menu menu__info">
           <span><strong>What the of website do you need?</strong></span>
         </div>
         <div class="menu menu__radio">
-          <label><input type="radio" name="Web Design" />Web Design</label>
-          <label
-            ><input type="radio" name="Web Development" />Web Development</label
-          >
-          <label><input type="radio" name="Logo Design" />Logo Design</label>
-          <label><input type="radio" name="Other" />Other</label>
+          <div class="radio--input-top">
+            <input type="radio" name="Web Design" />
+            <span>Web Design</span>
+          </div>
+          <div class="radio--input-left">
+            <input type="radio" name="Web Development" />
+            <span>Web Development</span>
+          </div>
+          <div class="radio--input-right">
+            <input type="radio" name="Logo Design" />
+            <span>Logo Design</span>
+          </div>
+          <div class="radio--input-bot">
+            <input type="radio" name="Other" />
+            <span>Other</span>
+          </div>
         </div>
         <div class="menu menu__input">
-          <label for="message">Message</label>
+          <label for="message"><span>Message</span></label>
 
           <input
             type="message"
@@ -130,9 +141,7 @@
           />
         </div>
         <div class="menu menu__button">
-          <button type="submit" form="form1" value="Submit">
-            Send Message
-          </button>
+          <button type="submit" value="Submit">Send Message</button>
         </div>
       </div>
     </main>
