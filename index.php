@@ -1,3 +1,5 @@
+<?php include 'userinfo.php'; ?>
+
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -9,6 +11,9 @@
     <title>Zadanie3</title>
   </head>
   <body>
+
+  <?php echo $alert ?>
+
     <header class="header">
       <div class="header__hero">
         <span><h1>Contact Us</h1></span>
@@ -51,62 +56,71 @@
       <div class="main__section">
         <div class="main__section-top">
           <div class="main__section main__section--input-left">
-            <label for="first-name"><span>First Name</span></label>
-            <br />
-            <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              required
-              minlength="3"
-              maxlength="24"
-              size="24"
-            />
+            <form class="contact" action="" method="post">
+              <label for="first-name"><span>First Name</span></label>
+              <br />
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                required
+                minlength="3"
+                maxlength="24"
+                size="24"
+              />
+            </form>
           </div>
           <div class="main__section main__section--input-right">
-            <label for="lastname"><span>Last Name</span></label>
-            <br />
-            <input
-              type="text"
-              id="lastname"
-              name="lastname"
-              required
-              minlength="3"
-              maxlength="24"
-              size="24"
-            />
+            <form class="contact" action="" method="post">
+              <label for="lastname"><span>Last Name</span></label>
+              <br />
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                required
+                minlength="3"
+                maxlength="24"
+                size="24"
+              />
+            </form>
           </div>
         </div>
         <div class="main__section-bot">
           <div class="main__section main__section--input-left">
-            <label for="mail"><span>Mail</span></label>
-            <br />
-            <input
-              type="email"
-              id="email"
-              name="mail"
-              required
-              minlength="8"
-              maxlength="24"
-              size="24"
-            />
+            <form class="contact" action="" method="post">
+              <label for="mail"><span>Mail</span></label>
+              <br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                minlength="8"
+                maxlength="24"
+                size="24"
+              />
+            </form>
           </div>
           <div class="main__section main__section--input-right">
-            <label for="phone"><span>Phone</span></label>
-            <br />
-            <input
-              type="phone"
-              id="phone"
-              name="phone"
-              required
-              minlength="9"
-              maxlength="13"
-              size="13"
-            />
+            <form class="contact" action="" method="post">
+              <label for="phone"><span>Phone</span></label>
+              <br />
+              <input
+                type="phone"
+                id="phone"
+                name="phone"
+                required
+                minlength="9"
+                maxlength="13"
+                size="13"
+              />
+            </form>
           </div>
         </div>
         <div class="menu"></div>
         <div class="menu menu__info">
+          <form class="contact" action="" method="post">
           <span><strong>What the of website do you need?</strong></span>
         </div>
         <div class="menu menu__radio">
@@ -114,7 +128,7 @@
             <input
               class="btn"
               type="checkbox"
-              name="radio-button"
+              name="radiobutton"
               value="Web Design"
             />
             <span>Web Design</span>
@@ -123,7 +137,7 @@
             <input
               class="btn"
               type="checkbox"
-              name="radio-button"
+              name="radiobutton"
               value="Web Development"
             />
             <span>Web Development</span>
@@ -132,7 +146,7 @@
             <input
               class="btn"
               type="checkbox"
-              name="radio-button"
+              name="radiobutton"
               value="Logo Design"
             />
             <span>Logo Design</span>
@@ -141,13 +155,15 @@
             <input
               class="btn"
               type="checkbox"
-              name="radio-button"
+              name="radiobutton"
               value="Other"
             />
             <span>Other</span>
+          </form>
           </div>
         </div>
         <div class="menu menu__input">
+          <form class="contact" action="" method="post">
           <label for="message"><span>Message</span></label>
 
           <input
@@ -159,13 +175,21 @@
             maxlength="54"
             size="54"
           />
+          </form>
         </div>
         <div class="menu menu__button">
-          <button type="submit" value="Submit" method="post">
-            Send Message
-          </button>
+          <form class="contact" action="" method="post">
+            <button type="submit" value="Submit">Send Message</button>
+          </form>
         </div>
       </div>
     </main>
+    <div class="alert-success">
+      <span>MessageSent!</span>
+    </div>
+    <div class="alert-error">
+      <span>Something went wrong!</span>
+    </div>
+    <script src="sript.js"></script>
   </body>
 </html>
