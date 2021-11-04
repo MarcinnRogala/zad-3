@@ -12,6 +12,7 @@ if (isset($_POST['submit'])) {
     $radiobutton = $_POST['radiobutton'];
     $message = $_POST['message'];
 }
+
 	$mail->isSMTP();
     $mail->Host = "smtp.gmail.com"; 
     $mail->SMTPAuth = true; 

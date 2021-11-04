@@ -54,36 +54,38 @@
     <div class="main__section">
       <div class="main__section-top">
         <div class="main__section main__section--input-left">
-  <form class="contact" action="index.php" method="post">
-            <label for="first-name"><span>First Name</span></label>
+          <form class="contact" action="index.php" method="post">
+            <label for="firstname"><span>First Name</span></label>
             <br />
-            <input type="text" id="firstname" name="firstname" required minlength="3" maxlength="24" size="24" />
+            <input type="text" id="firstname" name="firstname" required size="24" pattern="[A-Za-z]{3,24}"/>
 
         </div>
         <div class="main__section main__section--input-right">
 
           <label for="lastname"><span>Last Name</span></label>
           <br />
-          <input type="text" id="lastname" name="lastname" required minlength="3" maxlength="24" size="24" />
+          <input type="text" id="lastname" name="lastname" required size="24" pattern="[A-Za-z]{3,24}"/>
 
         </div>
       </div>
       <div class="main__section-bot">
         <div class="main__section main__section--input-left">
 
-          <label for="mail"><span>Mail</span></label>
+          <label for="email"><span>Mail</span></label>
           <br />
-          <input type="email" id="email" name="email" required minlength="8" maxlength="24" size="24" />
+          <input type="email" id="email" name="email" required minlength="8" maxlength="24" size="24" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
 
         </div>
+      
         <div class="main__section main__section--input-right">
 
           <label for="phone"><span>Phone</span></label>
           <br />
-          <input type="phone" id="phone" name="phone" required minlength="9" maxlength="13" size="13" />
+          <input type="number" id="phone" name="phone" required minlength="9" maxlength="13" size="13" onkeypress="if(event.keyCode>57 || event.keyCode<48)return false"/>
 
         </div>
       </div>
+
       <div class="menu"></div>
       <div class="menu menu__info">
 
@@ -95,7 +97,7 @@
           <span>Web Design</span>
         </div>
         <div class="radio--input-left">
-          <input class="btn" type="checkbox" name="radiobutton" value="Web Development" />
+          <input class="btn" type="checkbox" name="radiobutton" value="Web Development" checked />
           <span>Web Development</span>
         </div>
         <div class="radio--input-right">
@@ -113,7 +115,7 @@
       </div>
       <div class="menu menu__button">
         <button type="submit" value="Submit">Send Message</button>
-  </form>
+        </form>
       </div>
     </div>
   </main>
