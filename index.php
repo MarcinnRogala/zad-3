@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
     $mail->Host = "smtp.gmail.com"; 
     $mail->SMTPAuth = true; 
     $mail->Username = "mrogala.arkonsoft@gmail.com"; 
-    $mail->Password = 'TDW8961ndd'; 
+    $mail->Password = 'Hidden'; 
     $mail->Port = 587; 
     $mail->SMTPSecure = 'tls';  
     $mail->setFrom('mrogala.arkonsoft@gmail.com');
