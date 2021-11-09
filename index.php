@@ -16,12 +16,12 @@ if (isset($_POST['submit'])) {
 	$mail->isSMTP();
     $mail->Host = "smtp.gmail.com"; 
     $mail->SMTPAuth = true; 
-    $mail->Username = "mrogala.arkonsoft@gmail.com"; 
+    $mail->Username = "Any@email.com"; 
     $mail->Password = 'Hidden'; 
     $mail->Port = 587; 
     $mail->SMTPSecure = 'tls';  
-    $mail->setFrom('mrogala.arkonsoft@gmail.com');
-    $mail->addAddress('mrogala.arkonsoft@gmail.com');
+    $mail->setFrom('Any@email.com');
+    $mail->addAddress('Any@email.com');
     $mail->isHTML(true);
     $mail->Subject='Masin';
 	$mail->Body='<h3>FirstName :' .$_POST['firstname']. '<br>LastName :' .$_POST['lastname']. '<br>Email :' .$_POST['email']. '<br>Phone :' .$_POST['phone']. '<br>Check :' .$_POST['radiobutton']. '<br>Message :' .$_POST['message'];
